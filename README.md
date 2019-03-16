@@ -200,10 +200,10 @@ Now fill in the `switch` statement, replacing the comment with the snippet below
         interests: ["JavaScript", "geography", "music"],
         image: "https://images.unsplash.com/photo-1502720705749-871143f0e671?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&fit=max&s=b8377ca9f985d80264279f277f3a67f5"
       };
-    case "extraCellForCsvRow":
-      return "extra cell fetched asynchronously";
-    default:
-      throw new Error("404 Not Found");
+  case "extraCellForCsvRow":
+    return "extra cell fetched asynchronously";
+  default:
+    throw new Error("404 Not Found");
 ```
 
 (Notice here that an error will be thrown if `type` is not a recognised value. We will use that for testing error-handling later.)
